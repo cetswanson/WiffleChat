@@ -16,7 +16,7 @@ if (Meteor.isClient) {
 
   Template.input.events = {
     'keydown input#message' : function (event) {
-      if (event.which == 13) { // 13 is the enter key event
+      if (event.which == 13) {
         if (Meteor.user())
           var name = Meteor.user().username;
         else
