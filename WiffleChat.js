@@ -32,10 +32,15 @@ if (Meteor.isClient) {
 
           document.getElementById('message').value = '';
           message.value = '';
+          scrollPosition();
         }
       }
     }
   };
+
+$(document).ready(function(){
+  scrollPosition();
+});
 
 if (Meteor.isServer) {
   Meteor.startup(function () {
