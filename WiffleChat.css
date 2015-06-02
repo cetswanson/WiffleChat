@@ -3,6 +3,6 @@ html {
     font-family: Verdana, sans-serif;
 }
 
-.login-buttons-dropdown-align-right {
-    float: right;
+.username {
+  color: grey;
 }
