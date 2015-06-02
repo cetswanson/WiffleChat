@@ -6,3 +6,8 @@ html {
 .username {
   color: grey;
 }
+
+.input {
+  margin-bottom: 5em;
+  position: fixed;
+}
