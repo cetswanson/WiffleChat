@@ -1,1 +1,4 @@
-/* CSS declarations go here */
+html {
+    padding: 10px;
+    font-family: Verdana, sans-serif;
+}
