@@ -10,6 +10,10 @@ if (Meteor.isClient) {
       }
   });
 
+  var scrollPosition = function() {
+    $('#messages').scrollTop($('#messages')[0].scrollHeight);
+  };
+
   Template.input.events = {
     'keydown input#message' : function (event) {
       if (event.which == 13) {
@@ -28,10 +32,15 @@ if (Meteor.isClient) {
 
           document.getElementById('message').value = '';
           message.value = '';
+          scrollPosition();
         }
       }
     }
   };
+
+$(document).ready(function(){
+  scrollPosition();
+});
 
 if (Meteor.isServer) {
   Meteor.startup(function () {
