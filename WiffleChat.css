@@ -74,3 +74,18 @@ html {
   text-shadow: 0 1px 1px rgba(255,255,255,0.8);
   word-wrap: break-word;
 }
+
+.btn-custom {
+  width: 10em;
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  text-shadow: 1px 1px 30px #666666;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 20px;
+  background: #34d968;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+}
