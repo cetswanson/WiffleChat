@@ -4,20 +4,25 @@
 
 <body>
   <h1>WiffleChat</h1>
-  {{> loginButtons }}<br>
-  <div class="messageBox" id="messageBox">
-    {{> messages}}
-  </div><br>
-  {{> input}}<br>
+  <div class="loginButtons">
+    {{> loginButtons }}
+  </div><br><br>
+  {{#if currentUser}}
+    <div class="messageBox" id="messageBox">
+      {{> messages}}
+    </div><br>
+    {{> input}}<br>
+  {{/if}}
 </body>
 
 <template name="messages">
   {{#each messages}}
-    <strong class="username">{{name}}</strong> {{message}}<br>
+    <span class="messageArea">
+      <strong class="username">{{name}}  </strong>{{message}}</span><br>
   {{/each}}
 </template>
 
 <template name="input" class="input">
-  <input type="text" id="message"><a href="#" id="sendMessage" class="button success">Send</a>
+  <input type="text" id="message"><br>
+  <a href="#" id="sendMessage" class="btn-custom">Send</a>
 </template>
-
