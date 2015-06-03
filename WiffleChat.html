@@ -5,7 +5,7 @@
 <body>
   <h1>WiffleChat</h1>
   {{> loginButtons }}<br>
-  <div class="messages" id="messages">
+  <div class="messageBox" id="messageBox">
     {{> messages}}
   </div><br>
   {{> input}}<br>
@@ -13,7 +13,7 @@
 
 <template name="messages">
   {{#each messages}}
-    <strong class="username">{{name}}:</strong> {{message}}<br>
+    <strong class="username">{{name}}</strong> {{message}}<br>
   {{/each}}
 </template>
 
