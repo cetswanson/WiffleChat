@@ -1,5 +1,9 @@
 if (Meteor.isClient) {
 
+  Template.messages.rendered = function () {
+    scrollPosition();
+  };
+
   Accounts.ui.config({
      passwordSignupFields: 'USERNAME_ONLY'
   });
