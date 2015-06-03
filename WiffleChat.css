@@ -3,6 +3,11 @@ html {
     font-family: Verdana, sans-serif;
 }
 
+.loginButtons {
+  position: relative;
+  float: left;
+}
+
 .username {
   color: red;
 }
