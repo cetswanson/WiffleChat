@@ -88,4 +88,8 @@ html {
   padding: 10px 20px 10px 20px;
   text-decoration: none;
 }
+
+.btn:hover {
+  background: #00ad06;
+  text-decoration: none;
 }
