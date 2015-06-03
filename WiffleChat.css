@@ -19,3 +19,17 @@ html {
   border: 1px black;
   background-color: white;
 }
+
+#message {
+  display: block;
+  margin: 0;
+  width: 75%;
+  font-family: sans-serif;
+  font-size: 1.5em;
+  appearance: none;
+  box-shadow: none;
+  border-radius: none;
+  padding: 10px;
+  border: solid 1px #dcdcdc;
+  transition: box-shadow 0.3s, border 0.3s;
+}
