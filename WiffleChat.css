@@ -12,8 +12,8 @@ html {
   position: fixed;
 }
 
-.messages {
-  width: 100%;
+.messageBox {
+  width: 75%;
   height: 30em;
   overflow: auto;
   border: 1px black;
