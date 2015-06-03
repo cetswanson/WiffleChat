@@ -11,7 +11,7 @@ if (Meteor.isClient) {
   });
 
   var scrollPosition = function() {
-    $('#messages').scrollTop($('#messages')[0].scrollHeight);
+    $('.messageBox').scrollTop($('.messageBox')[0].scrollHeight);
   };
 
   Template.input.events = {
