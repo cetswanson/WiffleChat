@@ -15,7 +15,7 @@ if (Meteor.isClient) {
   });
 
   var scrollPosition = function() {
-    $('.messageBox').scrollTop($('.messageBox')[0].scrollHeight);
+    $(".messageBox").prop({ scrollTop: $(".messageBox").prop("scrollHeight") });
   };
 
   Template.input.events = {
@@ -41,10 +41,6 @@ if (Meteor.isClient) {
       }
     }
   };
-
-$(document).ready(function(){
-  scrollPosition();
-});
 
 if (Meteor.isServer) {
   Meteor.startup(function () {
